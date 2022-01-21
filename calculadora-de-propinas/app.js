@@ -1,29 +1,23 @@
+function calcular() {
+  var montoIni = 0;
+  var porcentajePropina = 0;
+  var valorPropina = 0;
+  var total = 0;
 
-function calcular(){
-	
-var montoIni =0;
-// var propina =0;
-var valorPropina = 0;
-var total =0;
+  montoIni = parseInt(document.getElementById("totalFacturado").value);
+  porcentajePropina = parseInt(
+    document.getElementById("porcentajePropina").value
+  );
+  var coheficienteDePropina = porcentajePropina / 100;
 
+  valorPropina = montoIni * coheficienteDePropina;
 
-montoIni = document.getElementById('totalFacturado').value;
-// valorPropina = document.getElementById('importe_propina').value;♥
+  document.getElementById("importePropina").value = valorPropina;
 
+  total = montoIni + valorPropina;
 
-valorPropina = (montoIni / 10);
-
-document.getElementById('importePropina').value=valorPropina;
-
-total = montoIni + valorPropina;
-
-document.getElementById('total').value=total;
-console.log(total);
+  document.getElementById("total").value = total;
+  console.log(total);
 }
-
-
-
-
-
 
 // console.log('acá va la magia')

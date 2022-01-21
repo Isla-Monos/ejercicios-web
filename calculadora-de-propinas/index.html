@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora de propinas</title>
-  <script src="app.js" defer ></script>
+  <script src="app.js" defer></script>
 </head>
+
 <body>
 
-  <p>Factura 
+  <p>Factura
     <input type="text" id="totalFacturado" name="totalFacturado" style=" width: 100px;">
   </p>
-  <!-- <p>Propina 
-     <input type="text" id="propina" name="propina" style=" width: 100px;">
-  </p> -->
+
   <p>
-    
-    Importe con propinas 
-    <input type="text" id="importePropina" name="importePropina" style=" width: 100px;">
+    Porcentaje de propina
+    <input type="text" id="porcentajePropina" name="porcentajePropina" style=" width: 100px;">
   </p>
-  <p>Total 
-    
-    <input type="text" id="total" name="total" style=" width: 100px;" 
+
+  <p>
+    La propina
+    <input disabled type="text" id="importePropina" name="importePropina" style=" width: 100px;">
   </p>
-  
-      <p>
-        <a href="javascript:calcular();"><span value="" type="submit" class="boton" id="btn_calcula" name="btn_calcula"  >Calcular</span></a>
-      </p>
-    
+
+  <p>
+    Total
+    <input disabled type="text" id="total" name="total" style=" width: 100px;">
+  </p>
+
+  <p>
+    <button onclick="calcular();">Calcular</button>
+  </p>
+
 </body>
+
 </html>
