@@ -1,0 +1,1 @@
+Crear una calculadora de propinas. El programa debe preguntar al usuario por el valor de la cuenta y el porcentaje de propina. El programa debe calcular la propina y mostrar ambos, la propina y el total de la cuenta con la propina incluida.
