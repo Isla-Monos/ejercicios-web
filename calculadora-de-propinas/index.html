@@ -10,30 +10,30 @@
 </head>
 
 <body>
-
+ <form>
   <p>Factura
-    <input type="text" id="totalFacturado" name="totalFacturado" style=" width: 100px;">
+    <input type="number" id="totalFacturado" min="0" name="totalFacturado" style=" width: 100px;">
   </p>
 
   <p>
     Porcentaje de propina
-    <input type="text" id="porcentajePropina" name="porcentajePropina" style=" width: 100px;">
+    <input type="number" id="porcentajePropina" min="0" name="porcentajePropina" style=" width: 100px;">
   </p>
 
   <p>
     La propina
-    <input disabled type="text" id="importePropina" name="importePropina" style=" width: 100px;">
+    <input disabled type="number" min="0" id="importePropina" name="importePropina" style=" width: 100px;">
   </p>
 
   <p>
     Total
-    <input disabled type="text" id="total" name="total" style=" width: 100px;">
+    <input disabled type="number" id="total" name="total" style=" width: 100px;">
   </p>
 
-  <p>
+  <!-- <p>
     <button onclick="calcular();">Calcular</button>
-  </p>
-
+  </p> -->
+</form>
 </body>
 
 </html>
